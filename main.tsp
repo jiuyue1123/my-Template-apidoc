@@ -21,6 +21,16 @@ namespace App {
         @summary("登录")
         @route("/login")
         @post
-        op login(...LoginDTO):LoginResult;
+        op login(...LoginDTO):TokenResult;
+
+        @summary("获取用户信息")
+        @route("/getUserInfo")
+        @get
+        op getUserInfo():UserInfoResult;
+
+        @summary("刷新token")
+        @route("/refreshToken")
+        @post
+        op refreshToken(refreshToken: string):TokenResult;
     }
 }

@@ -1,10 +1,11 @@
-# my-Tempate-apidoc
+# my-Template-apidoc
 使用 typespec 生成接口文档模板
 
 ## 快速开始
 ### 安装
 ```bash
-cd my-Tempate-apidoc
+git clone git@github.com:jiuyue1123/my-Template-apidoc.git
+cd my-Template-apidoc
 npm install -g @typespec/compiler
 tsp install
 ```
